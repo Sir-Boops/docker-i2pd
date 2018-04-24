@@ -26,4 +26,5 @@ RUN apk add -U --virtual deps \
     apk del --purge deps && \
     chown i2p:i2p -R /opt/*
 
-CMD su - -s /bin/ash i2p -c '/opt/i2pd/bin/i2pd --http.enabled=1 --http.address=0.0.0.0 --http.port=8080 --httpproxy.enabled=1 --httpproxy.address=0.0.0.0 --httpproxy.port=4444'
+USER i2p
+CMD /opt/i2pd/bin/i2pd --http.enabled=1 --http.address=0.0.0.0 --http.port=8080 --httpproxy.enabled=1 --httpproxy.address=0.0.0.0 --httpproxy.port=4444
