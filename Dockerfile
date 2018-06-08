@@ -18,8 +18,7 @@ RUN apk add -U --virtual deps \
     tar xf $I2PD_VER.tar.gz && \
     cd ~/i2pd-$I2PD_VER/build && \
     cmake -DCMAKE_INSTALL_PREFIX=/opt/i2pd \
-        -DCMAKE_BUILD_TYPE=Release \
-        -DWITH_AESNI=ON && \
+        -DCMAKE_BUILD_TYPE=Release && \
     make -j$(nproc) && \
     make install && \
     rm -rf ~/* && \
