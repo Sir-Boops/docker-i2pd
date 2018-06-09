@@ -26,4 +26,4 @@ RUN apk add -U --virtual deps \
     chown i2p:i2p -R /opt/*
 
 USER i2p
-CMD /opt/i2pd/bin/i2pd --http.enabled=1 --http.address=0.0.0.0 --http.port=8080 --socksproxy.enabled=1 --socksproxy.address=0.0.0.0 --socksproxy.port=4447
+CMD /opt/i2pd/bin/i2pd --http.enabled=1 --http.address=0.0.0.0 --http.port=8080 --httpproxy.enabled=1 --httpproxy.address=0.0.0.0 --httpproxy.port=4444
