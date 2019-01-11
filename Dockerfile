@@ -3,7 +3,7 @@ FROM alpine:3.8
 ENV I2PD_VER="2.22.0"
 
 RUN addgroup i2p && \
-	adduser -D -u 1000 -S -h /opt -G i2p i2p && \
+	adduser -D -u 1000 -S -h /opt -G i2p i2p
 
 RUN apk add -U --virtual deps \
 		gcc g++ cmake make \
