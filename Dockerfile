@@ -11,7 +11,7 @@ RUN apk add -U --virtual deps \
 	apk add boost-filesystem \
 		boost-program_options \
 		boost-date_time \
-		libssl1.0 libstdc++ && \
+		libssl1.1 libstdc++ && \
 	cd ~ && \
 	wget https://github.com/PurpleI2P/i2pd/archive/$I2PD_VER.tar.gz && \
 	tar xf $I2PD_VER.tar.gz && \
