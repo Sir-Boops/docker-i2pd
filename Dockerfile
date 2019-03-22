@@ -6,7 +6,7 @@ RUN addgroup i2p && \
 	adduser -D -u 1000 -S -h /opt -G i2p i2p
 
 RUN apk add -U --virtual deps \
-		gcc g++ cmake make lzlib \
+		gcc g++ cmake make zlib-dev \
 		openssl-dev boost-dev && \
 	apk add boost-filesystem \
 		boost-program_options \
