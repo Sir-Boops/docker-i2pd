@@ -3,7 +3,7 @@ pipeline:
         image: plugins/docker
         dockerfile: Dockerfile
         repo: sirboops/i2pd
-        tags: [2.23.0, latest]
+        tags: [2.24.0, latest]
         experimental: true
         squash: true
         secrets: [ docker_username, docker_password ]
