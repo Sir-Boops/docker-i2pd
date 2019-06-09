@@ -1,6 +1,6 @@
 FROM alpine:3.9
 
-ENV I2PD_VER="2.25.0"
+ENV I2PD_VER="2.26.0"
 
 RUN addgroup i2p && \
 	adduser -D -u 1000 -S -h /opt -G i2p i2p
